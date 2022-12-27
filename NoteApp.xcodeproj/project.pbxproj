@@ -33,6 +33,7 @@
 		2AA80FC7295B0065006935E6 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA80FC6295B0065006935E6 /* OnboardingVC.swift */; };
 		2AA80FC9295B03E6006935E6 /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA80FC8295B03E6006935E6 /* OnboardingPresenter.swift */; };
 		2AA80FCB295B04E6006935E6 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA80FCA295B04E6006935E6 /* Color.swift */; };
+		2AA80FCD295BA999006935E6 /* UITextView + Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA80FCC295BA999006935E6 /* UITextView + Ex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		2AA80FC6295B0065006935E6 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		2AA80FC8295B03E6006935E6 /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
 		2AA80FCA295B04E6006935E6 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		2AA80FCC295BA999006935E6 /* UITextView + Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView + Ex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				2A150DEE29563B0B00AEDCB7 /* UITextField + Ex.swift */,
+				2AA80FCC295BA999006935E6 /* UITextView + Ex.swift */,
 				2A150DF02956455600AEDCB7 /* Reusable.swift */,
 				2A150DF929572D2200AEDCB7 /* UILabel + Ex.swift */,
 				2A150E0329572FA500AEDCB7 /* String + Ex.swift */,
@@ -279,6 +282,7 @@
 			files = (
 				2A150DEB2956373A00AEDCB7 /* NoteEditVC.swift in Sources */,
 				2A150DF12956455600AEDCB7 /* Reusable.swift in Sources */,
+				2AA80FCD295BA999006935E6 /* UITextView + Ex.swift in Sources */,
 				2A150DF629571FB200AEDCB7 /* Coordinator.swift in Sources */,
 				2A150E0D29589F9700AEDCB7 /* Title.swift in Sources */,
 				2A150DD7295599BB00AEDCB7 /* NoteListPresenter.swift in Sources */,
