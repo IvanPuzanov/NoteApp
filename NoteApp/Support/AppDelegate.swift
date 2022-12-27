@@ -25,12 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         coordinator?.start()
         
         configureNavigationBarAppearance()
+        coordinator?.checkFirstLaunch()
         
         return true
     }
     
     func configureNavigationBarAppearance() {
-        UINavigationBar.appearance().tintColor = .systemPink
+        UINavigationBar.appearance().tintColor = Color.appAccentColor
     }
 
     // MARK: - Core Data stack

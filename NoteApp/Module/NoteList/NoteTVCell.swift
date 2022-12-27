@@ -59,8 +59,8 @@ private extension NoteTVCell {
         addSubview(noteImageView)
         noteImageView.translatesAutoresizingMaskIntoConstraints = false
         noteImageView.contentMode   = .scaleAspectFit
-        noteImageView.tintColor     = .secondaryLabel
-        noteImageView.image         = UIImage(systemName: "square.and.pencil")
+        noteImageView.tintColor     = .label
+        noteImageView.image         = UIImage(systemName: Image.squareAndPencil)
         
         NSLayoutConstraint.activate([
             noteImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
@@ -88,7 +88,7 @@ private extension NoteTVCell {
         noteBodyLabel.translatesAutoresizingMaskIntoConstraints = false
         
         noteBodyLabel.configure(fontSize: 16, fontWeight: .regular)
-        noteBodyLabel.set(textColor: .label.withAlphaComponent(0.85))
+        noteBodyLabel.set(textColor: .label)
         noteBodyLabel.numberOfLines = 2
         
         NSLayoutConstraint.activate([

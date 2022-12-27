@@ -18,7 +18,7 @@ extension UITextField {
         
         let flexSpace   = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let done        = UIBarButtonItem(title: NSLocalizedString("Done", comment: ""), style: .done, target: self, action: #selector(resignFirstResponder))
-        done.tintColor  = .systemPink
+        done.tintColor  = Color.appAccentColor
         
         let items = [flexSpace, done]
         doneToolbar.items = items
@@ -36,7 +36,7 @@ extension UITextView {
         let flexSpace   = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         
         let done        = UIBarButtonItem(title: NSLocalizedString("Done", comment: ""), style: .done, target: self, action: #selector(resignFirstResponder))
-        done.tintColor  = .systemPink
+        done.tintColor  = Color.appAccentColor
         
         let textAlignment = UIBarButtonItem(image: .init(systemName: "text.alignright"), style: .plain, target: self, action: #selector(changeAlignmentToRight))
         textAlignment.tintColor = .label
@@ -50,6 +50,8 @@ extension UITextView {
     
     @objc
     private func changeAlignmentToRight() {
-        self.textAlignment = .right
+        guard let selectedTextRange else { return }
+        let attributedString = NSAttributedString(string: self.text(in: selectedTextRange)!, attributes: [.foregroundColor : UIColor.systemRed])
+        attributedText = attributedString
     }
 }

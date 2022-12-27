@@ -28,6 +28,11 @@
 		2A313F392954ED650047808C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A313F372954ED650047808C /* LaunchScreen.storyboard */; };
 		2A65866B2958CDF500F9D285 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6586692958CDF500F9D285 /* Note+CoreDataClass.swift */; };
 		2A65866C2958CDF500F9D285 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A65866A2958CDF500F9D285 /* Note+CoreDataProperties.swift */; };
+		2AA80FC1295AF934006935E6 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA80FC0295AF934006935E6 /* Image.swift */; };
+		2AA80FC4295AF99F006935E6 /* User Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA80FC3295AF99F006935E6 /* User Defaults.swift */; };
+		2AA80FC7295B0065006935E6 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA80FC6295B0065006935E6 /* OnboardingVC.swift */; };
+		2AA80FC9295B03E6006935E6 /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA80FC8295B03E6006935E6 /* OnboardingPresenter.swift */; };
+		2AA80FCB295B04E6006935E6 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA80FCA295B04E6006935E6 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +59,11 @@
 		2A313F3A2954ED650047808C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A6586692958CDF500F9D285 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2A65866A2958CDF500F9D285 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2AA80FC0295AF934006935E6 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		2AA80FC3295AF99F006935E6 /* User Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User Defaults.swift"; sourceTree = "<group>"; };
+		2AA80FC6295B0065006935E6 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		2AA80FC8295B03E6006935E6 /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
+		2AA80FCA295B04E6006935E6 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +143,7 @@
 		2A313F422954EE930047808C /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				2AA80FC5295AFFCE006935E6 /* Onboarding */,
 				2A313F462954EEB80047808C /* NoteList */,
 				2A313F472954EEBE0047808C /* NoteEdit */,
 			);
@@ -144,6 +155,9 @@
 			children = (
 				2A150E0C29589F9700AEDCB7 /* Title.swift */,
 				2A150DF22956DF6F00AEDCB7 /* Error.swift */,
+				2AA80FC0295AF934006935E6 /* Image.swift */,
+				2AA80FC3295AF99F006935E6 /* User Defaults.swift */,
+				2AA80FCA295B04E6006935E6 /* Color.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -182,6 +196,15 @@
 				2A150DEC2956399700AEDCB7 /* NoteEditPresenter.swift */,
 			);
 			path = NoteEdit;
+			sourceTree = "<group>";
+		};
+		2AA80FC5295AFFCE006935E6 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2AA80FC6295B0065006935E6 /* OnboardingVC.swift */,
+				2AA80FC8295B03E6006935E6 /* OnboardingPresenter.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,10 +282,12 @@
 				2A150DF629571FB200AEDCB7 /* Coordinator.swift in Sources */,
 				2A150E0D29589F9700AEDCB7 /* Title.swift in Sources */,
 				2A150DD7295599BB00AEDCB7 /* NoteListPresenter.swift in Sources */,
+				2AA80FCB295B04E6006935E6 /* Color.swift in Sources */,
 				2A150DF32956DF6F00AEDCB7 /* Error.swift in Sources */,
 				2A150E0629572FAB00AEDCB7 /* Date + Ex.swift in Sources */,
 				2A150DF829571FD000AEDCB7 /* AppCoordinator.swift in Sources */,
 				2A150DE529560EB800AEDCB7 /* NoteService.swift in Sources */,
+				2AA80FC1295AF934006935E6 /* Image.swift in Sources */,
 				2A150E0829573B3400AEDCB7 /* NoteTVCell.swift in Sources */,
 				2A150DED2956399700AEDCB7 /* NoteEditPresenter.swift in Sources */,
 				2A313F2A2954ED630047808C /* AppDelegate.swift in Sources */,
@@ -270,7 +295,10 @@
 				2A150DFA29572D2200AEDCB7 /* UILabel + Ex.swift in Sources */,
 				2A150E0429572FA500AEDCB7 /* String + Ex.swift in Sources */,
 				2A150DEF29563B0B00AEDCB7 /* UITextField + Ex.swift in Sources */,
+				2AA80FC7295B0065006935E6 /* OnboardingVC.swift in Sources */,
+				2AA80FC4295AF99F006935E6 /* User Defaults.swift in Sources */,
 				2A65866B2958CDF500F9D285 /* Note+CoreDataClass.swift in Sources */,
+				2AA80FC9295B03E6006935E6 /* OnboardingPresenter.swift in Sources */,
 				2A313F342954ED630047808C /* NoteApp.xcdatamodeld in Sources */,
 				2A150DD5295599B000AEDCB7 /* NoteListVC.swift in Sources */,
 			);

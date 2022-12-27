@@ -85,7 +85,6 @@ private extension NoteListVC {
         dataSource = TableDataSource(tableView: self.tableView, cellProvider: { tableView, indexPath, note in
             let cell = tableView.dequeueReusableCell(withIdentifier: NoteTVCell.id, for: indexPath) as? NoteTVCell
             cell?.set(with: note)
-            cell?.accessoryType = .disclosureIndicator
             return cell
         })
         
