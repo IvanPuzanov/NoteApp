@@ -1,5 +1,5 @@
 # NoteApp
-List of notes             |  Edit note
+List of notes             |  Editing a note
 :-------------------------:|:-------------------------:
 <img src="1.PNG" width="365" height="790">  |  <img src="2.PNG" width="365" height="790">
 
